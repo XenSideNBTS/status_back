@@ -8,7 +8,7 @@ $.getJSON(url, function(r) {
    return false;
  } 
 var pl = '';
-  $('#rest').html(r.description.replace(/§(.+?)/gi, '')+'<br><b>Игроков Онлайн:</b> '+r.players.online+pl)+'<b>Версия:</b> '+r.version.name)
+  $('#rest').html(r.description.replace(/§(.+?)/gi, '')+'<br><b>Игроков Онлайн:</b> '+r.players.online+pl)
  $('#favicon').attr('src', r.favicon);
     
 });
