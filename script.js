@@ -8,7 +8,7 @@ $.getJSON(url, function(r) {
    return false;
  } 
 var pl = '';
- $('#rest').html(r.description.replace(/§(.+?)/gi, '')+'<br><br><b>Версия: '+r.version.name+'<br><b>Пинг: '+r.latency+'<br><b>Players Online:</b> '+r.players.online+'/'+r.players.max);
+ $('#rest').html(r.description.replace(/§(.+?)/gi, '')+'<br><br><b>Версия: '+r.version.name+'<br><b>Пинг: '+r.latency+'<br><b>Игроков онлайн:</b> '+r.players.online+'/'+r.players.max);
  $('#favicon').attr('src', r.favicon);
     
 });
